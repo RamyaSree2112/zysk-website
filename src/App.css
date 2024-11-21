@@ -1,38 +1,196 @@
-.App {
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header Section */
+.header {
+  background-color: #f8f9fa;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links li {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.demo-button,
+.signup-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.demo-button {
+  background-color: #007BFF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-button {
+  background-color: #28A745;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.demo-button:hover {
+  background-color: #0056b3;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
+
+/* Paragraph Section */
+.paragraph-section {
+  padding: 2rem 1rem;
+}
+
+.info-paragraph {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Company Section */
+.company-section {
+  padding: 2rem 1rem;
+}
+
+.company-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* New Heading and Paragraph Section */
+.new-heading-section {
+  padding: 2rem 1rem;
+}
+
+.new-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.new-paragraph {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Another Heading and Paragraph Section */
+.another-heading-section {
+  padding: 2rem 1rem;
+}
+
+.another-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.another-paragraph {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Message Section */
+.message-section {
+  padding: 2rem 1rem;
+}
+
+.message-blocks-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.message-block {
+  width: 30%;
+  text-align: center;
+}
+
+.message-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.message-heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.message-paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
 }
